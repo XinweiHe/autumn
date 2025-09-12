@@ -9,7 +9,7 @@
         "chalk": "^5.5.0",
         "drizzle-kit": "^0.31.4",
         "tailwind-scrollbar-hide": "^4.0.0",
-        "traceroot-sdk-ts": "0.0.1-alpha.21",
+        "traceroot-sdk-ts": "^0.0.1-alpha.33",
       },
       "devDependencies": {
         "@types/node": "^24.3.0",
@@ -88,7 +88,7 @@
         "resend": "^4.1.1",
         "stripe": "^17.5.0",
         "svix": "^1.45.1",
-        "traceroot-sdk-ts": "0.0.1-alpha.21",
+        "traceroot-sdk-ts": "^0.0.1-alpha.33",
         "tsc-alias": "^1.8.16",
         "ws": "^8.18.0",
         "zod": "^3.25.23",
@@ -1737,6 +1737,8 @@
 
     "ee-first": ["ee-first@1.1.1", "", {}, "sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow=="],
 
+    "effect": ["effect@3.17.13", "", { "dependencies": { "@standard-schema/spec": "^1.0.0", "fast-check": "^3.23.1" } }, "sha512-JMz5oBxs/6mu4FP9Csjub4jYMUwMLrp+IzUmSDVIzn2NoeoyOXMl7x1lghfr3dLKWffWrdnv/d8nFFdgrHXPqw=="],
+
     "electron-to-chromium": ["electron-to-chromium@1.5.211", "", {}, "sha512-IGBvimJkotaLzFnwIVgW9/UD/AOJ2tByUmeOrtqBfACSbAw5b1G0XpvdaieKyc7ULmbwXVx+4e4Be8pOPBrYkw=="],
 
     "emoji-regex": ["emoji-regex@8.0.0", "", {}, "sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A=="],
@@ -1816,6 +1818,8 @@
     "extend": ["extend@3.0.2", "", {}, "sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g=="],
 
     "extract-zip": ["extract-zip@2.0.1", "", { "dependencies": { "debug": "^4.1.1", "get-stream": "^5.1.0", "yauzl": "^2.10.0" }, "optionalDependencies": { "@types/yauzl": "^2.9.1" }, "bin": { "extract-zip": "cli.js" } }, "sha512-GDhU9ntwuKyGXdZBUgTIe+vXnWj0fppUEtMDL0+idd5Sta8TGpHssn/eusA9mrPr9qNDym6SxAYZjNvCn/9RBg=="],
+
+    "fast-check": ["fast-check@3.23.2", "", { "dependencies": { "pure-rand": "^6.1.0" } }, "sha512-h5+1OzzfCC3Ef7VbtKdcv7zsstUQwUDlYpUTvjeUsJAssPgLn7QzbboPtL5ro04Mq0rPOsMzl7q5hIbRs2wD1A=="],
 
     "fast-copy": ["fast-copy@3.0.2", "", {}, "sha512-dl0O9Vhju8IrcLndv2eU4ldt1ftXMqqfgN4H1cpmGV7P6jeB9FwpN9a2c8DPGE1Ys88rNUJVYDHq73CGAGOPfQ=="],
 
@@ -2429,6 +2433,8 @@
 
     "puppeteer-core": ["puppeteer-core@24.17.0", "", { "dependencies": { "@puppeteer/browsers": "2.10.7", "chromium-bidi": "8.0.0", "debug": "^4.4.1", "devtools-protocol": "0.0.1475386", "typed-query-selector": "^2.12.0", "ws": "^8.18.3" } }, "sha512-RYOBKFiF+3RdwIZTEacqNpD567gaFcBAOKTT7742FdB1icXudrPI7BlZbYTYWK2wgGQUXt9Zi1Yn+D5PmCs4CA=="],
 
+    "pure-rand": ["pure-rand@6.1.0", "", {}, "sha512-bVWawvoZoBYpp6yIoQtQXHZjmz35RSVHnUOTefl8Vcjr8snTPY1wnpSPMWekcFwbxI6gtmT7rSYPFvz71ldiOA=="],
+
     "pvtsutils": ["pvtsutils@1.3.6", "", { "dependencies": { "tslib": "^2.8.1" } }, "sha512-PLgQXQ6H2FWCaeRak8vvk1GW462lMxB5s3Jm673N82zI4vqtVUPuZdffdZbPDFRoU8kAhItWFtPCWiPpp4/EDg=="],
 
     "pvutils": ["pvutils@1.1.3", "", {}, "sha512-pMpnA0qRdFp32b1sJl1wOJNxZLQ2cbQx+k6tjNtZ8CpvVhNqEPRgivZ2WOUev2YMajecdH7ctUPDvEe87nariQ=="],
@@ -2709,7 +2715,7 @@
 
     "tr46": ["tr46@0.0.3", "", {}, "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="],
 
-    "traceroot-sdk-ts": ["traceroot-sdk-ts@0.0.1-alpha.21", "", { "dependencies": { "@aws-sdk/client-cloudwatch-logs": "^3.855.0", "@opentelemetry/api": "^1.9.0", "@opentelemetry/auto-instrumentations-node": "^0.53.0", "@opentelemetry/exporter-trace-otlp-http": "^0.53.0", "@opentelemetry/resources": "^1.28.0", "@opentelemetry/sdk-node": "^0.53.0", "@opentelemetry/sdk-trace-base": "^1.28.0", "@opentelemetry/sdk-trace-node": "^1.28.0", "@opentelemetry/semantic-conventions": "^1.36.0", "axios": "^1.6.0", "winston": "^3.11.0", "winston-cloudwatch": "^6.3.0", "yaml": "^2.3.4" } }, "sha512-CXRs0BgI3nQIgzvIkMaIk+/X/xvpsGH6y6Hsu9AR/tx/c2e4CSGr8yfIVI3CGKLAqagvKro1WmZ53nGTHeiGyA=="],
+    "traceroot-sdk-ts": ["traceroot-sdk-ts@0.0.1-alpha.33", "", { "dependencies": { "@aws-sdk/client-cloudwatch-logs": "^3.855.0", "@opentelemetry/api": "^1.9.0", "@opentelemetry/auto-instrumentations-node": "^0.53.0", "@opentelemetry/exporter-trace-otlp-http": "^0.53.0", "@opentelemetry/resources": "^1.28.0", "@opentelemetry/sdk-node": "^0.53.0", "@opentelemetry/sdk-trace-base": "^1.28.0", "@opentelemetry/sdk-trace-node": "^1.28.0", "@opentelemetry/semantic-conventions": "^1.36.0", "axios": "^1.6.0", "effect": "^3.17.9", "winston": "^3.11.0", "winston-cloudwatch": "^6.3.0", "yaml": "^2.3.4" } }, "sha512-2Dp9CzpcOxbIFLCQ56N0xGr6LJVDqlTlAYyP4iz7+VxQ4FL3GhfRQvz9NnYA3hHq04P/M5H0E/rxe12BB+NNvw=="],
 
     "tree-kill": ["tree-kill@1.2.2", "", { "bin": { "tree-kill": "cli.js" } }, "sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A=="],
 

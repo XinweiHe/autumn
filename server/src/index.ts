@@ -27,8 +27,12 @@ import { checkEnvVars } from "./utils/initUtils.js";
 import { ClickHouseManager } from "./external/clickhouse/ClickHouseManager.js";
 import * as traceroot from "traceroot-sdk-ts";
 import { createLogger, logger } from "./external/logtail/logtailUtils.js";
+import { readFileSync } from "fs";
+import { createRequire } from "module";
 
 const tracer = trace.getTracer("express");
+
+const require = createRequire(import.meta.url);
 
 checkEnvVars();
 
@@ -76,6 +80,9 @@ const init = async () => {
   app.all("/api/auth/*", toNodeHandler(auth));
 
   const tracerootLogger = traceroot.get_logger();
+  const tracerootPkg = require("traceroot-sdk-ts/package.json");
+  tracerootLogger.info("Traceroot SDK version: " + tracerootPkg.version);
+
   tracerootLogger.info("Testing traceroot from index.ts!!!");
 
   const logger = createLogger();
